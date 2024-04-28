@@ -16,4 +16,9 @@ public class DampeningEnchantment extends ProtectionEnchantment {
         }
         return 0;
     }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return false;
+    }
 }
