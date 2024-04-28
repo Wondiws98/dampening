@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "dampening",
+	"version": "${version}",
+	"name": "Dampening",
+	"description": "Elytra Protection enchantment that reduces flight impact damage.",
+	"authors": [
+		"Wondiws98"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/Wondiws98",
+		"sources": "https://github.com/Wondiws98/dampening",
+		"issues": "https://github.com/Wondiws98/dampening/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/user/Wondiws98"
+			}
+		}
+	},
+	"license": "MIT",
+	"icon": "assets/dampening/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wondiws98.dampening.DampeningMain"
+		],
+		"fabric-datagen": [
+			"net.wondiws98.dampening.DampeningDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
