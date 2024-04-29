@@ -2,7 +2,7 @@ package net.wondiws98.dampening.enchantment;
 
 import net.minecraft.enchantment.ProtectionEnchantment;
 import net.minecraft.entity.damage.DamageSource;
-import net.wondiws98.dampening.registry.DampeningTags;
+import net.minecraft.entity.damage.DamageTypes;
 
 public class DampeningEnchantment extends ProtectionEnchantment {
     public DampeningEnchantment(Properties properties) {
@@ -11,8 +11,8 @@ public class DampeningEnchantment extends ProtectionEnchantment {
 
     @Override
     public int getProtectionAmount(int level, DamageSource source) {
-        if (source.isIn(DampeningTags.FLY_INTO_WALL)) {
-            return level * 5;
+        if (source.isOf(DamageTypes.FLY_INTO_WALL)) {
+            return level * 4;
         }
         return 0;
     }
